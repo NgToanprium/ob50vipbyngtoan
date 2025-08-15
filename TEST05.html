@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@NgToanIosCheat</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.7/lib/theme-chalk/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #000
+      center/cover no-repeat;
+      font-family: Arial, sans-serif;
+    }
+    #app {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .menu-box {
+      background: url('https://v1.pinimg.com/videos/iht/720p/7d/1c/a7/7d1ca785628615b140b3b20ca78e0f1a.mp4') center center / cover no-repeat;
+      border-radius: 12px;
+      padding: 25px;
+      width: 430px;
+      box-shadow: 0 0 12px rgba(255,255,255,.1);
+    }
+    .rainbow-text {
+      font-size: 22px;
+      font-weight: bold;
+      background: linear-gradient(270deg,
+        #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee,
+        #2b65ff, #8000ff, #ff00c8, #ff0000, #ff7300,
+        #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff,
+        #ff00c8, #ff0000, #ff7300, #ffeb00, #47ff00
+      );
+      background-size: 500% auto ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 10s ease infinite;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @keyframes rainbow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .function-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .function-row label {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      gap: 6px;
+    }
+    .contact {
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    .el-tabs__item {
+      font-weight: bold;
+      background: linear-gradient(270deg, #ff0000, #ff9900, #33cc33, #3399ff, #9933ff, #ff3399, #ff0000);
+      background-size: 1000% 1000%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 8s ease infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="menu-box">
+      <div class="rainbow-text">@NgToanXTweak</div>
+      <el-tabs v-model="tabValue">
+        <el-tab-pane label="Function" name="function">
+          <div v-show="tabValue==='function'">
+            <div class="function-row">
+              <label><input type="checkbox" onclick="Aim360()">AimHead</label>
+              <label><input type="checkbox" onclick="AimFor180()">Aim 180</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="NoRecoilX()">No Recoil</label>
+              <label><input type="checkbox" onclick="SpeedMove()">Speed X10</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="AimCopeX()">Aim Scope</label>
+              <label><input type="checkbox" onclick="AimKill()">Aim Kill</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="BuffFPS240()">240 FPS</label>
+              <label><input type="checkbox" onclick="Teleport()">Teleport</label>
+            </div>
+          </div>
+        </el-tab-pane>
+
+        <el-tab-pane label="ESP" name="esp">
+          <div v-show="tabValue==='esp'">
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPBox()">ESP Box</label>
+              <label><input type="checkbox" onclick="ESPLine()">ESP Line</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPName()">ESP Name</label>
+              <label><input type="checkbox" onclick="ESPHP()">ESP HP</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPSkeleton()">ESP Skeleton</label>
+              <label><input type="checkbox" onclick="ESPDistance()">ESP Distance</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPWeapon()">ESP Weapon</label>
+              <label><input type="checkbox" onclick="ESPRadar()">ESP Radar</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPCircle()">ESP Circle</label>
+              <label><input type="checkbox" onclick="ESPAlert()">ESP Alert</label>
+            </div>
+            <div class="function-row">
+              <label><input type="checkbox" onclick="ESPCrosshair()">ESP Crosshair</label>
+              <label><input type="checkbox" onclick="ESPViewline()">ESP Viewline</label>
+            </div>
+          </div>
+        </el-tab-pane>
+
+        <el-tab-pane label="Contact" name="contact">
+          <div v-show="tabValue==='contact'" class="contact">
+            <p>Zalo: <a href="https://zalo.me/0836162479" target="_blank">NgToanXTweak</a></p>
+            <p>TikTok: <a href="KnightSupport" target="_blank">NgToanIosCheat</a></p>
+          </div>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
+  </div>
+
+  <script>
+    new Vue({el:'#app',data:{tabValue:'function'}});
+
+    function Aim360(){h5gg.clearResults();h5gg.searchNumber(1077936128,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,1148829696,'I32'));}
+    function AimFor180(){h5gg.clearResults();h5gg.searchNumber(1077936128,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,-20000,'I32'));}
+    function NoRecoilX(){h5gg.clearResults();h5gg.searchNumber(1016018816,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,180,'I32'));}
+    function SpeedMove(){h5gg.clearResults();h5gg.searchNumber(1092616192,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,1112014848,'I32'));}
+    function AimCopeX(){h5gg.clearResults();h5gg.searchNumber(1075000115,'F32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,-5,'F32'));}
+    function AimKill(){h5gg.clearResults();h5gg.searchNumber(1056964608,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,1073741824,'I32'));}
+    function BuffFPS240(){h5gg.clearResults();h5gg.searchNumber(180,'F32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,240,'F32'));h5gg.clearResults();h5gg.searchNumber(1,'I32','0x100000000','0x160000000');h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,3,'I32'));}
+    function Teleport(){h5gg.clearResults();h5gg.searchNumber("3.0F;1.0F;0.0F::13","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,999.0,'F32'));}
+    function ESPBox(){h5gg.clearResults();h5gg.searchNumber("1.0F;0.5F;0.0F::9","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,888.0,'F32'));}
+    function ESPLine(){h5gg.clearResults();h5gg.searchNumber("2.0F;1.0F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,777.0,'F32'));}
+    function ESPName(){h5gg.clearResults();h5gg.searchNumber("0.8F;0.3F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,666.0,'F32'));}
+    function ESPHP(){h5gg.clearResults();h5gg.searchNumber("0.9F;0.6F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,555.0,'F32'));}
+    function ESPSkeleton(){h5gg.clearResults();h5gg.searchNumber("1.0F;0.1F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,444.0,'F32'));}
+    function ESPDistance(){h5gg.clearResults();h5gg.searchNumber("0.1F;0.2F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,333.0,'F32'));}
+    function ESPWeapon(){h5gg.clearResults();h5gg.searchNumber("0.7F;0.9F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,222.0,'F32'));}
+    function ESPRadar(){h5gg.clearResults();h5gg.searchNumber("1.1F;1.3F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,111.0,'F32'));}
+    function ESPCircle(){h5gg.clearResults();h5gg.searchNumber("0.6F;0.4F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,999.0,'F32'));}
+    function ESPAlert(){h5gg.clearResults();h5gg.searchNumber("0.3F;0.2F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,888.0,'F32'));}
+    function ESPCrosshair(){h5gg.clearResults();h5gg.searchNumber("0.4F;0.5F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,777.0,'F32'));}
+    function ESPViewline(){h5gg.clearResults();h5gg.searchNumber("0.2F;0.1F::5","F32","0x100000000","0x160000000");h5gg.getResults(h5gg.getResultsCount()).forEach(x=>h5gg.setValue(x.address,666.0,'F32'));}
+  </script>
+</body>
+</html>
